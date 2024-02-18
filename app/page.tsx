@@ -1,6 +1,6 @@
 // import Image from "next/image";
 
-import Ig from "./ig/page";
+import {Ig} from "./ig/page";
 
 // export default function Home() {
 //   return (
