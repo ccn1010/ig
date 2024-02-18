@@ -33,12 +33,13 @@ export const List = ({ defaultData }: { defaultData: IIg[] }) => {
     root: null,
     rootMargin: "0px",
   });
-  console.log("--------", entry);
+  console.log("--------", isLoading);
   useEffect(() => {
+    if (isLoading) return;
     if (entry?.isIntersecting) {
       setSize((v)=>v + 1);
     }
-  }, [entry?.isIntersecting, setSize]);
+  }, [entry?.isIntersecting, setSize, isLoading]);
 
   const list = useMemo(() => {
     return [...defaultData, ...data.flat()];
@@ -58,7 +59,7 @@ export const List = ({ defaultData }: { defaultData: IIg[] }) => {
                 width={360}
                 height={360}
                 src={item.download_url}
-                placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfMAAAHyCAMAAADIj"
+                placeholder="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
               />
               <div className="group-hover:flex hidden justify-center gap-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-white">
                 <button>like</button>

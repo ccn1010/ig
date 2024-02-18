@@ -7,7 +7,7 @@ export default async function Ig() {
   
 
   return (
-    <div className="flex flex-col w-3/5 pt-8">
+    <div className="flex flex-col w-3/5 pt-8 pb-20">
       <div className="flex items-center gap-10 h-48">
         <Image
           alt=""
