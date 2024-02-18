@@ -1,6 +1,8 @@
 // import Image from "next/image";
 
-import {Ig} from "./ig/page";
+import { redirect } from "next/navigation";
+
+// import {Ig} from "./ig/page";
 
 // export default function Home() {
 //   return (
@@ -114,4 +116,8 @@ import {Ig} from "./ig/page";
 //   );
 // }
 
-export default Ig
+// export default Ig
+
+export default function Home() {
+  redirect("/ig")
+}
