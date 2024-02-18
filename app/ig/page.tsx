@@ -2,7 +2,7 @@ import Image from "next/image";
 import { List } from "./List";
 import { IIg } from "./ig.types";
 
-export const Ig = async () => {
+export default async function Ig() {
   const list: IIg[] = await fetch("https://picsum.photos/v2/list?page=1&limit=20").then((res) => res.json());
   
 
@@ -41,4 +41,3 @@ export const Ig = async () => {
   );
 };
 
-export default Ig;
