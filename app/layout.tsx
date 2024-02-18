@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex flex-col items-center">
           <div className="w-full flex justify-center items-center h-20 border-b-2 border-indigo-100">
-            <div className="flex justify-between items-center w-4/5">
+            <div className="flex justify-between items-center w-3/5">
               <div className="font-bold font-sans text-2xl">Instagram</div>
               <div className="flex gap-4">
                 <button className="bg-sky-500/100 text-white font-bold rounded-md px-4 py-2">
