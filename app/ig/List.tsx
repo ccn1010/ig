@@ -36,7 +36,7 @@ export const List = ({ defaultData }: { defaultData: IIg[] }) => {
   console.log("--------", entry);
   useEffect(() => {
     if (entry?.isIntersecting) {
-      setSize(size + 1);
+      setSize((v)=>v + 1);
     }
   }, [entry?.isIntersecting, setSize]);
 
